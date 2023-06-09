@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Juego de Bolos </title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+        <script src="./throw.js"></script>
+    </head>
+
+    <body>
+        <a-scene id="scene">
+
+            <!-- Recursos-->
+            <a-assets>        
+
+            <a-asset-item
+                id="pin"
+                src="./models/pino/scene.gltf"
+                ></a-asset-item>
+            </a-assets>
+
+            <!-- Luz-->
+            <a-entity light="type: ambient; color: white; intensity:0.5"></a-entity>
+
+            <!-- Cámara y cursor-->
+            <a-entity 
+                id="camera"
+                camera
+                position = "0 1.6 0"
+                wasd-controls
+                look-controls ="pointerLockEnabled: false"  
+                >
+                <a-entity
+                id="pinos"
+                gltf-model="#pin"
+                position="0 -4.4 3"
+                rotation="0 180 0"
+                scale="0.35 1 1"          
+                >
+                </a-entity>
+                <a-cursor></a-cursor>  
+            </a-entity>
+
+            <!-- Balas -->
+                <a-entity bullets></a-entity>
+
+            <!-- Terreno -->
+            <a-plane
+                id="ground"
+                repeat="5 5"
+                position="0 1 0"
+                rotation="-90 0 0"
+                height="200"
+                width="200"
+                color="#FBF2D4"
+                static-body
+                visible="true"
+                >
+            </a-plane>
+
+            <!-- Pinos -->
+            <a-box position = "-2 1.5 -10"  depth="1" height = "1", width = "1" gltf-model="#pin" dynamic-body></a-box>
+            <a-box position = "-4 1.5 -10"  depth="1" height = "1", width = "1" gltf-model="#pin" dynamic-body></a-box>
+            <a-box position = "0 1.5 -10"  depth="1" height = "1", width = "1" gltf-model="#pin" dynamic-body></a-box>
+
+            <a-box position = "-1 1.5 -9"  depth="1" height = "1", width = "1" gltf-model="#pin" dynamic-body></a-box>
+            <a-box position = "-3 1.5 -9"  depth="1" height = "1", width = "1" gltf-model="#pin" dynamic-body></a-box>
+
+            <a-box position = "-2 1.5 -8"  depth="1" height = "1", width = "1" gltf-model="#pin" dynamic-body></a-box>
+        </a-scene>
+    </body>
+</html>

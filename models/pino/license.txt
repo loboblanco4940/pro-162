@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bowling Pin
+* source:	https://sketchfab.com/3d-models/bowling-pin-784499acc8a646318e11543a46132127
+* author:	Pricey1600 (https://sketchfab.com/Pricey1600)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bowling Pin" (https://sketchfab.com/3d-models/bowling-pin-784499acc8a646318e11543a46132127) by Pricey1600 (https://sketchfab.com/Pricey1600) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
